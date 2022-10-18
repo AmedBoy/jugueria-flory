@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Flory</title>
+    <script language='JavaScript'>
+        function disable(){
+            alert('Las imágenes estan sujetas a derecho de autor, y no se pueden descargar')
+            return false
+        }
+        document.oncontextmenu = disable
+    </script>
+    <link rel="icon" href="./img/logos/logoprincipal.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" Sintegrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <header class="wrapper clearfix">
+        <a href="#inicio" class="logo"> 
+            <span class="neon">Jugueria</span> Flory</a>
+        <input type="checkbox"  id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#nosotros">nosotros</a>
+            <a href="#sabores">sabores</a>
+            <a href="#contactenos">contactenos</a>
+            <a href="#comentarios">comentarios</a>
+            <a class="Login" href="login/login.html">log in</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>JUGOS DE <span>FRUTA</span></h3>
+            <p>Jugueria Flory les ofrece una variedad de jugos de fruta, los cuales se preparan al instante acorde a sus preferencias. Además, se elaboran sabrosos sándwich: de pollo, de palta. Y pan con huevo, salchicha y con jamonada.</p>
+            <a href="#sabores" class="btn">MAS DETALLES</a>
+        </div>
+        <div class="slider-frame">
+            <div class="slider"id="slider">
+                <div class="slider-item"><img src="./img/recursos_n/Jugos.jpg" alt="" class="slider-img"></div>
+                <div class="slider-item"><img src="./img/productos/slide1-.jpeg" alt="" class="slider-img"></div>
+                <div class="slider-item"><img src="./img/productos/slide2-.jpeg" alt="" class="slider-img"></div>
+                <div class="slider-item"><img src="./img/productos/slide3-.jpeg" alt="" class="slider-img"></div>
+                <div class="slider-item"><img src="./img/recursos_n/horario--.png" alt="" class="slider-img"></div>
+            </div>
+            <div class="slider_btn slider_btn-right"id="btn-right">&#62</div>
+            <div class="slider_btn slider_btn-left" id="btn-left">&#60</div>
+        </div>
+        <script src="./js/slider.js"></script>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <h1 class="heading">CONOCENOS UN POCO MÁS</h1>
+        <div class="caja-contenedor">
+            <div class="caja">                
+                <h3>Un emprendimiento familiar</h3>
+                <img src="./img/recursos_n/nosotros-.png" alt="">
+                <p>Jugueria Flory surgio de los corazones de una familia humilde que decidio iniciar un negocio en 2019 a fin de: Brindar más momentos de satisfacción a está encantadora ciudad.</p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+            
+            <div class="caja">
+                <h3>¿nuestra finalidad?</h3>
+                <img src="./img/recursos_n/mision.png" alt="">
+                <p>Surgimos como una alternativa para hacer realidad tus gustos y sabemos que un deleite viene del cumplimiento de un antojito: "Ayudamos a cumplir los antojitos de muchas personas para darles más momentos de felicidad"</p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+            
+            <div class="caja">
+                <h3>¿Donde estamos?</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.84715344238523!2d-78.17245899508242!3d-8.146755996414928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91adcf6f46e94cab%3A0x471209b58c2f378!2sC%C3%A9sar%20Vallejo%201492-1572%2C%20Santiago%20de%20Chuco%2013146!5e0!3m2!1ses!2spe!4v1665514337989!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Nos puedes encontrar en Santiago de Chuco, calle Cesar Vallejo N°1596, por el momento solo atendemos en está ciudad.</p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+
+            
+        </div>
+    </section>
+    
+    
+    <section class="sabores" id="sabores">
+        <h1 class="heading">planes de precios</h1>
+        <p>Puedes elegir el sabor y tamaño que prefieras</p>
+        <h2 class="sub-heading">Jugos</h2>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3 class="titulo">piña</h3>
+                <img src="./img/productos/jugo-de-piña--.jpg" alt="">
+                <div class="tipos">S/.4.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>De piña</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/ysvdse" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo">papaya</h3>
+                <img src="./img/productos/jugo-de-papaya-.jpeg" alt="">
+                <div class="tipos">S/.4.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>De papaya</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/ysvdse" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo">surtido de remolacha</h3>
+                <img src="./img/productos/jugo-surtido-de-remolacha-.jpeg" alt="">
+                <div class="tipos">S/.4.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>Surtido: De platano, papaya y fresa</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/exoyjq" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+            
+            <div class="caja">
+                <h3 class="titulo">surtido de piña</h3>
+                <img src="./img/productos/jugo-surtido-de-piña-.jpeg" alt="">
+                <div class="tipos">S/.4.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>Surtido: De platano, papaya y fresa</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/gpe57f" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+        </div>
+        
+        <h2 class="sub-heading">Sandwich</h2>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3 class="titulo">de jamonada</h3>
+                <img src="./img/productos/pan-con-jamonada.jpeg" alt="">
+                <div class="tipos">S/.2.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>De piña</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/9puubg" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo">De huevo</h3>
+                <img src="./img/productos/pan-con-huevo.jpeg" alt="">
+                <div class="tipos">S/.2.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>De papaya</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/8c3i5m" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo">de hotdog</h3>
+                <img src="./img/productos/pan-con-salchicha.jpeg" alt="">
+                <div class="tipos">S/.4.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>Surtido: De platano, papaya y fresa</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/08pwha" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+
+            <div class="caja">
+                <h3 class="titulo">De pollo</h3>
+                <img src="./img/productos/sandwich-de-pollo.jpeg" alt="">
+                <div class="tipos">S/.2.00</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>Vaso mediano</li>
+                    <li><i class="fa-solid fa-check"></i>Con o sin azucar</li>
+                    <li><i class="fa-solid fa-check"></i>Surtido: De platano, papaya y fresa</li>
+                    <li><i class="fa-solid fa-times"></i>vaso grande</li>
+                </ul>
+                <a href="https://wa.link/xhzejw" target="_blank" rel="noopener noreferrer" class="btn">Compra ya!!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactenos" id="contactenos">
+        <div class="form_wrap">
+
+            <div class="cantact_info">
+                <div class="info_title">
+                    <span class="fa fa-user-circle"></span>
+                    <h2>INFORMACIÓN<br>DE CONTACTO</h2>
+                </div>
+                <div class="info_items">
+                  <p><span class="fa fa-envelope"></span> <a href="mailto:flory.pg21@gmail.com" title="Enváme un mensaje">flory.pg21@gmail.com</a></p>
+                    <p><span class="fa fa-mobile"></span> +51 921-538-982</p>
+                </div>
+            </div>
+    
+            <form action="enviar.php" method="post" class="form_contact">
+                <h2>Envia un mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" name="nombre" id="names">
+    
+                    <label for="phone">Telefono / Celular</label>
+                    <input type="text" name="telefono" id="phone">
+    
+                    <label for="email">Correo electronico *</label>
+                    <input type="text" name="correo" id="email">
+    
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+    
+                    <input type="button" value="Enviar Mensaje" id="btnSend">
+                </div>
+            </form>
+            <script src="./js/jquery-3.2.1.js"></script>
+            <script src="./js/script.js"></script>
+        </div>
+    </section>
+ 
+    <div class="suscribete">
+        <h3>SUSCRIBETE PARA MAS NOVEDADES</h3>
+        <P>Mantente informado de nuestros servicios, suscribete para recibir información en caso de incremento de precios y otras novedades.</P>
+        <form action="enviar.php" method="post">
+            <input type="email" placeholder="ingresa tu email" name="correos">
+            <input type="submit" value="suscríbete" id="enviar">
+        </form>
+    </div>
+
+
+    <section class="comentarios" id="comentarios">
+        <h1 class="heading">opiniones de clientes</h1>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <i class="fa-solid fa-comment"></i>
+                <div class="user">
+                    <h3>Antonio Garcia</h3>
+                    <img src="./img/client/avatar2.png" alt="">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="comentarios">
+                        "Jugueria Flory es u  sitio muy acogedor siempre hay una buena atención y sobre todos los productos que ofrece son muy bien preparados los jugos y los sándwich deliciosos"
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja">
+                <i class="fa-solid fa-comment"></i>
+                <div class="user">
+                    <h3>Elmer Paredes</h3>
+                    <img src="./img/client/client2.jpeg" alt="">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="comentarios">
+                        "Jugueria Flory, es el mejor lugar para consumir unos deliciosos jugos, sándwich, keke ya que la atención es muy cordial y sobre todo es preparado al gusto del cliente ya sea fríos, tibios o calientes para poder disfrutar en familia"
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja">
+                <i class="fa-solid fa-comment"></i>
+                <div class="user">
+                    <h3>Miguel Rodriguez</h3>
+                    <img src="./img/client/client3.jpeg" alt="">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="comentarios">
+                        "Jugueria Flory es una de las mejores en Santiago de chuco a mi me gusta ir a ahí porque siempre se encuentra una atención sumamente adecuada y los productos que ofrece esta justo para degustar excelente preparación y sobre todo esta a precio moderado y accesible al bolsillo del cliente"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

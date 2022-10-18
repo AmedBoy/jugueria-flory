@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;600 & display=swap');
+/* estilos del proyecto */
+:root{
+    --blanco: #fffcf6;
+    --rojo: #EC7272;
+    --rojow:  #f39696;
+    --naranja: #F7A76C;
+    --naranjaw: #E0D98C;
+    --naranjac: #FDEEDC;
+    --naranjac2: #FFD8A9;
+    --verde: #C3FF99;
+    --verdeo: #4f832a;
+    --marronc:#EDDFB3;
+    --marron: #FFEBC1;
+    --degradado: linear-gradient(90deg, var(--naranjaw), var(--rojo));
+    --degradado2: linear-gradient(90deg, var(--rojo), var(--marron));
+}
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-image: url("../img/recursos_n/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--degradado);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 5px var(--rojow), 0 0 15px var(--rojow), 0 0 30px var(--rojow), 0 0 50px var(--rojow);
+}
+header .logo span{
+    color:  white;
+    font-weight: 600;
+    text-shadow: 0 0 5px var(--rojo), 0 0 15px var(--rojo), 0 0 30px var(--rojo), 0 0 50px var(--rojo);
+}
+header .navbar a {
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: var(--blanco);
+    font-weight: 600;
+    text-shadow: 0 0 .9px var(--naranjac);
+}
+header .navbar a:hover {
+    color: var(--naranjac);
+    border-bottom: #ccc ridge 1px;
+    font-weight: 500;
+}
+
+.container-form {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+    margin: 125px auto auto auto;
+}
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.reminder {
+    padding: 1rem;
+    background-color: rgb(71, 63, 63, 0.8);
+    border-radius: 10px;
+}
+.reminder h2 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+.reminder button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #4a4aee;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+.reminder button:hover {
+    background-color: #6464f8;
+}
+
+/* estilos del formulario de registro */
+.sign-in .container,
+.sign-up .container{
+    background-color:  rgba(10, 60, 92, 0.808);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+    text-align: center;
+}
+.icons {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.border-icon {
+    height: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+.form1, .form2{
+	padding: 30px 40px;	
+}
+
+.form-control, .form-control2 {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label, .form-control2 label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input, .form-control2 input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+    background-color: transparent;
+    color: white;
+}
+.form-control input::placeholder, .form-control2 input::placeholder{
+    color: rgba(255, 233, 233, 0.9);
+}
+.form-control input:focus, .form-control2 input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input, .form-control2.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input, .form-control2.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i, .form-control2 i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle, 
+.form-control2.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle, 
+.form-control2.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small, .form-control2 small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small, .form-control2.error small {
+	visibility: visible;
+}
+
+.form1 button, .form2 button {
+	background-color: #ffffff;
+	border: 2px solid #8e44ad;
+	border-radius: 75px;
+	color: #333;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin: auto;
+	width: 75%;
+    display: block;
+    cursor: pointer;
+}
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+} 
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active{
+    opacity: 0;
+    visibility: hidden;
+}
+@media (max-width:1200px){
+    body{
+        height: 100vh;
+    }
+}
+
+@media (max-width:990px){
+    body{
+        height: 100vh;
+    }
+    .form{
+        height: 70%;
+        width: 90%;
+    }
+}
+@media (max-width:915px){
+    .container-form {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        transition: all .5s ease-out;
+        margin: 125px auto auto auto;
+    }
+}
+@media (max-width:768px){
+    .container-form {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        transition: all .5s ease-out;
+        margin: 105px auto auto auto;
+    }
+    .container{
+        width: 550px;
+    }
+    .reminder{
+        font-size: 75%;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        height: 100vh;
+    }
+    .container-form{
+        margin: 195px auto auto auto;
+    }
+    .form1, .form2{
+        padding: 16px 14px;	
+    }
+}
