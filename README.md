@@ -1,2 +1,2 @@
-# pagina-jugueria-flory
+# jugueria-flory
 desarrollado para potenciar un negocio
